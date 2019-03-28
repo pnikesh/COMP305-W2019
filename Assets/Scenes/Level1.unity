@@ -864,7 +864,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 738183950}
-  - component: {fileID: 738183949}
   - component: {fileID: 738183951}
   m_Layer: 0
   m_Name: GameController
@@ -873,19 +872,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &738183949
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 738183948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_GeneratorAsset: {fileID: 0}
-  m_Script: {fileID: 11500000, guid: 8300be79afef0b24199dcff735f13bc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &738183950
 Transform:
   m_ObjectHideFlags: 0
@@ -1845,7 +1831,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec474e2ac744af94887ff45c1e91436d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cherryCounter: 0
   itemFeedbackPref: {fileID: 4939956080167059937, guid: a09e9e7a878fe104e8b7a16f8c931069,
     type: 3}
 --- !u!4 &1614401829 stripped
@@ -5441,7 +5426,7 @@ MonoBehaviour:
     m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 3
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
