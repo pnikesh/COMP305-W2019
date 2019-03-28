@@ -264,6 +264,77 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e6aa346e67ec584fbea40a91eec281f, type: 3}
+--- !u!1 &95078507
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 95078508}
+  - component: {fileID: 95078510}
+  - component: {fileID: 95078509}
+  m_Layer: 0
+  m_Name: DeathCatcher
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &95078508
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95078507}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -6.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1817841835}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &95078509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95078507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 58a7012a49573a3468a1ae98174a0aff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &95078510
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95078507}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 18, y: 1}
+  m_EdgeRadius: 0
 --- !u!1001 &245922121
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -637,7 +708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c88390231e364204a9da3fa522336232, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ui_endLevelPanel: {fileID: 2128502055}
+  ui_endLevelPanel: {fileID: 0}
 --- !u!61 &625519858
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -900,6 +971,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ui_cherryCounter: {fileID: 2067490070}
+  ui_EndLevelPanel: {fileID: 2128502055}
 --- !u!1 &881874045
 GameObject:
   m_ObjectHideFlags: 0
@@ -1034,6 +1106,7 @@ GameObject:
   - component: {fileID: 896452784}
   - component: {fileID: 896452786}
   - component: {fileID: 896452785}
+  - component: {fileID: 896452787}
   m_Layer: 5
   m_Name: UI_ItemCollectedText
   m_TagString: Untagged
@@ -1103,6 +1176,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 896452783}
   m_CullTransparentMesh: 0
+--- !u!114 &896452787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896452783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: d091e6a9c543b1d48842a25757c4c841, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &914088464
 GameObject:
   m_ObjectHideFlags: 0
@@ -1797,7 +1883,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a5ff7f8b8055594bbf1117a5777862f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 7.5
   jumpForce: 750
 --- !u!95 &1599509298
 Animator:
@@ -4980,6 +5066,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2112209277}
+  - {fileID: 95078508}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
